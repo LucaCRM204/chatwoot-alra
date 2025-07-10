@@ -1,0 +1,32 @@
+source 'https://rubygems.org'
+ruby '3.2.2'
+
+gem 'rails', '~> 7.0.8'
+
+# Base
+gem 'pg'
+gem 'puma'
+gem 'redis'
+gem 'sidekiq'
+
+# Utilidades
+gem 'dotenv-rails'
+gem 'image_processing'
+gem 'mini_magick'
+gem 'vips'
+gem 'webpacker'
+
+# Autenticación, autorización, y otros
+gem 'devise'
+gem 'omniauth'
+gem 'cancancan'
+
+# Admin y frontend
+gem 'administrate'
+gem 'sassc'
+gem 'webpacker'
+
+group :development, :test do
+  gem 'pry'
+  gem 'rspec-rails'
+end
